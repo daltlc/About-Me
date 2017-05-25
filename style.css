@@ -1,0 +1,19 @@
+body {
+  text-align: center;
+
+}
+
+h1 {
+  background-color:black;
+  color:white;
+}
+
+p{
+  border:5px solid black;
+}
+
+
+.page-content{
+  background-color:grey;
+  color:white;
+}
