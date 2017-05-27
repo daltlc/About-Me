@@ -44,6 +44,7 @@ four = four.toLowerCase();
 
 if (four === 'yes'){
   console.log('The user indeed had fun');
+  confirm('Have a good one!')
 } else {
-  confirm('Have a good day!');
+  confirm('Too bad so sad');
 }
