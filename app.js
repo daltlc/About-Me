@@ -89,25 +89,28 @@ for (var valid = false; vaild < 4; vaild++){
 var states = ['Nevada','Utah','Oregon','California'];
 var userGuess2 = prompt('What other state besides Washington have I lived in?');
 var result = false;
-var vaild2 = false;
-
-for (var valid2 = false; valid2 < 6; valid2++){
+var valid2 = false;
 
 
-  for (var i = 0; i <states.length; i++) {
-    if (userGuess2 === states[i])
-        result = true;
+  for (var q7loop = 0; q7loop < 6 && valid2 === false; q7loop++){
+
+    for (var i = 0; i <states.length; i++) {
+        if (userGuess2 === states[i])
+            result = true;
     }
 
-  if (result) {
-      confirm('Correct!');
-      console.log('User got number 7 right');
-    } else {
-      confirm('Wrong!');
+    if (result) {
+        valid2 = true;
+        confirm('Correct!');
+        console.log('User got number 7 right');
+    }
+    else {
       console.log('User got number 7 wrong.');
+      userGuess2 = prompt('Try again!');
+    }
+
 
   }
-}
 
 
 
