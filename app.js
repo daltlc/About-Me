@@ -76,17 +76,41 @@ for (var valid = false; vaild < 4; vaild++){
     if (userGuess === '22') {
         valid = true;
         confirm('Correct!')
+        console.log('User got nnumber 6 right.')
         correct++;
+        break;
     } else {
-        console.log("That number is invalid! Please enter a another number.");
+        console.log('User got number 6 wrong.');
         confirm('Try again!')
         wrong++;
     }
 }
 
-var states;
-var valid2 = false;
-states = ['Nevada','California','Oregon','Utah'];
+var states = ['Nevada','Utah','Oregon','California'];
+var userGuess2 = prompt('What other state besides Washington have I lived in?');
+var result = false;
+var vaild2 = false;
+
+for (var valid2 = false; valid2 < 6; valid2++){
+
+
+  for (var i = 0; i <states.length; i++) {
+    if (userGuess2 === states[i])
+        result = true;
+    }
+
+  if (result) {
+      confirm('Correct!');
+      console.log('User got number 7 right');
+    } else {
+      confirm('Wrong!');
+      console.log('User got number 7 wrong.');
+
+  }
+}
+
+
+
 
 
 
