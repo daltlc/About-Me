@@ -73,6 +73,16 @@ var userGuess;
 
 for (var valid = false; vaild < 4; vaild++){
     userGuess = prompt("How old do you think I am? You have 4 tries!");
+    if (userGuess > '22'){
+      valid = false;
+      confirm('Lower!');
+      console.log('User guessed too high');
+    }
+    if (userGuess < '22'){
+      valid = false;
+      confirm('Higher!');
+      console.log('User guessed too low');
+    }
     if (userGuess === '22') {
         valid = true;
         confirm('Correct!')
